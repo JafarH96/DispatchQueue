@@ -23,6 +23,12 @@ namespace DispatchQueue
             await queue.ContinueWith(action);
         }
 
+        public async void AsyncAfter(int milliseconds, Action<Task> action)
+        {
+            await Task.Delay(milliseconds);
+            await queue.ContinueWith(action);
+        }
+
         public void Sync(Action<Task> action)
         {
             queue.ContinueWith(action);
