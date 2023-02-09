@@ -31,3 +31,13 @@ myQueue.Async((_) => {
 });
 
 ```
+
+You can also run codes with a delay:
+
+```csharp
+DispatchQueue.main.AsyncAfter(milliseconds: 1000, (_) =>
+{
+	Console.WriteLine("After one second delay");
+});
+
+```
