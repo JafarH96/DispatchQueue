@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DispatchQueue", "DispatchQueue\DispatchQueue.csproj", "{578BDE6D-60AC-48F0-BB7A-EF70D96DE411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialDispatchQueue", "SerialDispatchQueue\SerialDispatchQueue.csproj", "{924084F8-3239-413C-93D0-69DD5F10BF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialDispatchQueue", "SerialDispatchQueue\SerialDispatchQueue.csproj", "{924084F8-3239-413C-93D0-69DD5F10BF39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialDispatchQueueDotNetFramework", "SerialDispatchQueueDotNetFramework\SerialDispatchQueueDotNetFramework.csproj", "{732ABC1C-9582-4FA3-B07D-16867E470527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{924084F8-3239-413C-93D0-69DD5F10BF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{924084F8-3239-413C-93D0-69DD5F10BF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{924084F8-3239-413C-93D0-69DD5F10BF39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732ABC1C-9582-4FA3-B07D-16867E470527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732ABC1C-9582-4FA3-B07D-16867E470527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732ABC1C-9582-4FA3-B07D-16867E470527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732ABC1C-9582-4FA3-B07D-16867E470527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
