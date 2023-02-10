@@ -7,7 +7,7 @@ Implementation of a DispatchQueue for asynchronous code execution in an easy way
 You can use the **Main** queue:
 
 ```csharp
-DispatchQueue.main.Async((_) => {
+SerialQueue.main.Async((_) => {
 	for (int i = 0; i < 100; i++)
 	{
 		Console.WriteLine($"From Main Queue {i}");
@@ -20,7 +20,7 @@ DispatchQueue.main.Async((_) => {
 Or create your own queue and use it separately:
 
 ```csharp
-DispatchQueue myQueue = new DispatchQueue();
+SerialQueue myQueue = new SerialQueue();
 
 myQueue.Async((_) => {
 	for (int i = 0; i < 100; i++)
@@ -35,7 +35,7 @@ myQueue.Async((_) => {
 You can also run codes with a delay:
 
 ```csharp
-DispatchQueue.main.AsyncAfter(milliseconds: 1000, (_) =>
+SerialQueue.main.AsyncAfter(milliseconds: 1000, (_) =>
 {
 	Console.WriteLine("After one second delay");
 });

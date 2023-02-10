@@ -7,9 +7,9 @@ namespace DispatchQueue
     {
         static void Main(string[] args)
         {
-            DispatchQueue myQueue = new DispatchQueue();
+            SerialQueue myQueue = new SerialQueue();
 
-            DispatchQueue.main.Async((_) => {
+            SerialQueue.main.Async((_) => {
                 for (int i = 0; i < 100; i++)
                 {
                     Console.WriteLine($"From Main Queue {i}");

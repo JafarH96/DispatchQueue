@@ -4,14 +4,14 @@ using System.Threading;
 
 namespace DispatchQueue
 {
-    public class DispatchQueue
+    public class SerialQueue
     {
         private Task queue;
         private CancellationTokenSource cancellationTokenSource;
 
-        public static DispatchQueue main = new DispatchQueue();
+        public static SerialQueue main = new SerialQueue();
 
-        public DispatchQueue()
+        public SerialQueue()
         {
             cancellationTokenSource = new CancellationTokenSource();
             queue = new Task(() => { }, cancellationTokenSource.Token, TaskCreationOptions.RunContinuationsAsynchronously);
