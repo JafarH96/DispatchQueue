@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <PackageId>com.JafarH.SerialDispatchQueue</PackageId>
+    <Company>JafarH</Company>
+    <Authors>JafarH96</Authors>
+    <Description>Implementation of a DispatchQueue for asynchronous code execution in an easy way, similar to the DispatchQueue in Swift language.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/JafarH96/DispatchQueue</PackageProjectUrl>
+    <PackageTags>SerialQueue, DispatchQueue, Queue</PackageTags>
+    <PackageReleaseNotes>First Release</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Update="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
